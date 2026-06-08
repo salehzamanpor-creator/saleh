@@ -7,105 +7,134 @@
 
 <style>
 body {
-    margin: 0;
-    font-family: sans-serif;
-    background: #ffffff;
-    color: #111;
-    text-align: center;
+  margin: 0;
+  font-family: sans-serif;
+  background: #0d0d0d;
+  color: white;
+  scroll-behavior: smooth;
 }
 
+/* HEADER */
 header {
-    background: black;
-    color: white;
-    padding: 20px;
-    font-size: 28px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  z-index: 1000;
 }
 
+header h1 {
+  color: #b84dff;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #b84dff;
+}
+
+/* HERO */
 .hero {
-    padding: 60px 20px;
+  text-align: center;
+  padding: 120px 20px 50px;
 }
 
-.hero h1 {
-    font-size: 32px;
+.hero h2 {
+  font-size: 40px;
+  color: #b84dff;
 }
 
-.boxes {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
+.btn {
+  background: linear-gradient(45deg, purple, violet);
+  padding: 15px 25px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: 20px;
+  color: white;
+  text-decoration: none;
 }
 
-.box {
-    background: white;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
-    animation: float 3s infinite ease-in-out;
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+  text-align: center;
 }
 
-@keyframes float {
-    0% { transform: translateY(0px);}
-    50% { transform: translateY(-10px);}
-    100% { transform: translateY(0px);}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-/* دکمه شناور */
-.telegram-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: black;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 50px;
-    font-size: 16px;
-    text-decoration: none;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid purple;
+  padding: 20px;
+  border-radius: 20px;
+  width: 250px;
+}
+
+/* FLOAT BUTTON */
+.float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: purple;
+  padding: 15px;
+  border-radius: 50%;
 }
 </style>
-
 </head>
 
 <body>
 
 <header>
-SalehStreet
+  <h1>SalehStreet</h1>
+  <nav>
+    <a href="#home">خانه</a>
+    <a href="#services">خدمات</a>
+    <a href="#about">درباره من</a>
+  </nav>
 </header>
 
-<section class="hero">
-<h1>طراحی حرفه‌ای بنر 🔥</h1>
-<p>طراحی بنر، ادیت عکس و خدمات گرافیکی حرفه‌ای</p>
+<!-- HOME -->
+<section id="home" class="hero">
+  <h2>طراحی حرفه‌ای بنر</h2>
+  <p>طراحی خاص برای کسب و کار شما</p>
+  <a class="btn" href="https://t.me/salehstreet">ثبت سفارش</a>
 </section>
 
-<!-- باکس‌ها -->
-<div class="boxes">
+<!-- SERVICES -->
+<section id="services">
+  <h2>خدمات</h2>
+  <div class="cards">
+    <div class="card">ساخت عکس</div>
+    <div class="card">ادیت عکس</div>
+    <div class="card">ساخت بنر تبلیغاتی</div>
+  </div>
+</section>
 
-<div class="box">
-ادیت عکس
-</div>
+<!-- ABOUT -->
+<section id="about">
+  <h2>درباره من</h2>
+  <p>
+  من صالح هستم یک طراح بنر و طراح سایت  
+  و هدف اول من رضایت شماست 🥰
+  </p>
+</section>
 
-<div class="box">
-ساخت بنر تبلیغاتی برای اینستا یا کسب و کارتان
-</div>
-
-<div class="box">
-ساخت عکس
-</div>
-
-</div>
-
-<!-- دکمه شناور -->
-<a class="telegram-btn" href="https://t.me/salehstreet?text=سلام%20برای%20سفارش%20پیام%20دادم" target="_blank">
-ثبت سفارش
-</a>
-
-<!-- متن زیر دکمه -->
-<p style="margin-top:100px; font-size:14px; color:gray;">
-در صورت نداشتن تلگرام به روبیکا پیام دهید 👇 <br>
-@kourosh61136113
-</p>
+<!-- TELEGRAM FLOAT -->
+<a href="https://t.me/salehstreet" class="float">📩</a>
 
 </body>
 </html>
