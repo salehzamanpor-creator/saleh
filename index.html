@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SalehStreet</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #ffffff;
+    color: #111;
+    text-align: center;
+}
+
+header {
+    background: black;
+    color: white;
+    padding: 20px;
+    font-size: 28px;
+}
+
+.hero {
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 32px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px);}
+    50% { transform: translateY(-10px);}
+    100% { transform: translateY(0px);}
+}
+
+/* دکمه شناور */
+.telegram-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: black;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+SalehStreet
+</header>
+
+<section class="hero">
+<h1>طراحی حرفه‌ای بنر 🔥</h1>
+<p>طراحی بنر، ادیت عکس و خدمات گرافیکی حرفه‌ای</p>
+</section>
+
+<!-- باکس‌ها -->
+<div class="boxes">
+
+<div class="box">
+ادیت عکس
+</div>
+
+<div class="box">
+ساخت بنر تبلیغاتی برای اینستا یا کسب و کارتان
+</div>
+
+<div class="box">
+ساخت عکس
+</div>
+
+</div>
+
+<!-- دکمه شناور -->
+<a class="telegram-btn" href="https://t.me/salehstreet?text=سلام%20برای%20سفارش%20پیام%20دادم" target="_blank">
+ثبت سفارش
+</a>
+
+<!-- متن زیر دکمه -->
+<p style="margin-top:100px; font-size:14px; color:gray;">
+در صورت نداشتن تلگرام به روبیکا پیام دهید 👇 <br>
+@kourosh61136113
+</p>
+
+</body>
+</html>
